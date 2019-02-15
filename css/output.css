@@ -1,0 +1,27 @@
+* {
+  margin: 0px;
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 60px;
+  background-color: #000;
+}
+.header p {
+  color: white;
+  background-color: #000;
+  align-self: center;
+}
+.header p .logo {
+  height: 30px;
+  width: 40px;
+}
+
+.br {
+  color: red;
+}
+
+/*# sourceMappingURL=output.css.map */

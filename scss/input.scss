@@ -1,15 +1,28 @@
+@import "variables";
+@import "mixins";
+
 * {
   margin: 0px;
   background-color: white;
 }
 
 .header {
-  display: flex; 
+  display: flex;
   flex-direction: row;
+  justify-content: space-around;
   height: 60px;
   background-color: $black;
   p {
     color: white;
-
+    background-color: $black;
+    align-self: center;
   }
+  p .logo{
+    height: 30px;
+    width: 40px;
+  }
+}
+
+.br {
+  color: red;
 }
