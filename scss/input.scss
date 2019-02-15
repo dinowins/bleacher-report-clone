@@ -1,0 +1,15 @@
+* {
+  margin: 0px;
+  background-color: white;
+}
+
+.header {
+  display: flex; 
+  flex-direction: row;
+  height: 60px;
+  background-color: $black;
+  p {
+    color: white;
+
+  }
+}
