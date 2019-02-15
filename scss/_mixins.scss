@@ -1,0 +1,17 @@
+@mixin hero-font($size){
+  font: {
+    size: $size;
+    family: helvetica;
+    weight: 400;
+  }
+}
+
+@mixin under-article-size {
+  width: 230px;
+  height: 230px
+}
+
+@mixin hero-under-img {
+  width: 100%;
+  height: 65%;
+}

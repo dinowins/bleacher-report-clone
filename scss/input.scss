@@ -4,6 +4,7 @@
 * {
   margin: 0px;
   background-color: white;
+  font-family: helvetica;
 }
 
 .header {
@@ -21,8 +22,52 @@
     height: 30px;
     width: 40px;
   }
+  #tickets {
+    margin-right: 20px;
+  }
 }
 
-.br {
-  color: red;
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  .hero-headline {
+    margin-top: 20px;
+    align-self: center;
+  }
+  .hero-headline-title {
+    padding-top: 5px;
+    height: 80px;
+    background-color: $black;
+    h2 {
+      @include hero-font(35px);
+      margin-left: 10px;
+      color: white;
+      background-color: $black;
+      height: 40px;
+    }
+    p {
+      margin: 5px 0 0 10px;
+      color: gray;
+      background-color: $black;
+    }
+  }
+  .hero-under {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .under-article {
+      @include under-article-size;
+      margin: 8px 8px;
+      h3 {
+        @include hero-font(20px);
+        color: white;
+        padding: 5px 0 0 5px;
+        background-color: $black;
+        height: 60px;
+      }
+    }
+    img {
+      @include hero-under-img;
+    }
+  }
 }
