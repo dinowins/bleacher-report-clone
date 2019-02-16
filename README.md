@@ -1,6 +1,6 @@
 # Bleacher Report Clone
 
-A clone of Bleacher Report's home page using HTML, CSS, and SASS.
+A clone of Bleacher Report's home page(www.bleacherreport.com) using HTML, CSS, and SASS.
 
 ## Getting Started
 
