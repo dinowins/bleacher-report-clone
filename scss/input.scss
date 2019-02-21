@@ -30,6 +30,7 @@
 .hero-container {
   display: flex;
   flex-direction: column;
+  margin: auto;
   .hero-headline {
     margin-top: 20px;
     align-self: center;
@@ -76,18 +77,65 @@
       @include hero-under-img;
     }
   }
-  .content {
-    width: 550px;
+}
+
+.content {
+  // border: 2px solid red;
+  width: 970px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .my-teams {
     display: flex;
     flex-direction: row;
-    // justify-content: center;
-    margin-top: 20px;
-    .headline-trends-column{
-      display: flex;
-      flex-direction: column;
+    @include content-head;
+    height: 35px;
+    .my-teams-color {
+      background-color: $teal-green;
     }
-
+    h3 {
+      padding-top: 10px;
+      background-color: $teal-green;
+      width: 150px;
+      height: 25px;
+      text-align: center;
+    }
+    p {
+      margin: 10px 0 10px 10px;
+      height: inherit;
+      text-align: center;
+    }
   }
-
+  .my-teams-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .headline-trends-column {
+    display: flex;
+    flex-direction: column;
+    // height: 35px;
+    .headlines-color {
+      background-color: $teal-green;
+      width: 150px;
+      height: 35px; 
+    }
+    .headlines {
+      @include content-head;
+    }
+    h3 {
+      padding: 10px;
+      background-color: $teal-green;
+      height: 25px;
+      text-align: center;
+    }
+    p {
+      padding-top: 5px;
+      margin: 10px 0px;
+      font-weight: bold;
+    }
+  }
 
 }
