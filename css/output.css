@@ -90,6 +90,31 @@
   justify-content: space-between;
   margin-top: 20px;
 }
+.content .my-teams-column {
+  display: flex;
+  flex-direction: column;
+}
+.content .my-teams-content {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+}
+.content .my-teams-content p {
+  font-size: 17px;
+  font-family: helvetica;
+  font-weight: 400;
+  font-weight: bold;
+  align-self: center;
+}
+.content .my-teams-content #bryce {
+  width: 225px;
+  height: 150px;
+  justify-content: flex-start;
+}
+.content .my-teams-content #report {
+  padding: 65px 5px;
+  border: 1px solid lightgray;
+}
 .content .my-teams {
   display: flex;
   flex-direction: row;
@@ -107,7 +132,7 @@
   padding-top: 10px;
   background-color: #03fc96;
   width: 150px;
-  height: 25px;
+  height: 35px;
   text-align: center;
 }
 .content .my-teams p {
@@ -143,8 +168,81 @@
 }
 .content .headline-trends-column p {
   padding-top: 5px;
+  padding-bottom: 5px;
   margin: 10px 0px;
   font-weight: bold;
+  border-bottom: 1px solid gray;
+}
+.content .headline-trends-column p:hover {
+  text-decoration: underline;
+}
+.content .headline-trends-column .trending-colors {
+  width: 150px;
+}
+
+@media screen and (max-width: 968px) {
+  * {
+    margin: 0;
+  }
+
+  .hero-container {
+    width: 100%;
+  }
+  .hero-container .hero-image {
+    width: 100vw;
+  }
+  .hero-container img {
+    width: 100vw;
+  }
+  .hero-container .under-article {
+    width: 95vw;
+    margin: auto;
+  }
+  .hero-container .under-article h3 {
+    font-size: 15px;
+  }
+
+  .hide-nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 716px) {
+  * {
+    margin: 0;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .under-article h3 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  .my-teams {
+    align-self: center;
+  }
+
+  .hide-author {
+    display: none;
+  }
+
+  .hero-container img {
+    width: 100vw;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

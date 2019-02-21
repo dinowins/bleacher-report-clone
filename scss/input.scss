@@ -88,6 +88,32 @@
   justify-content: space-between;
   margin-top: 20px;
 
+  .my-teams-column {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .my-teams-content {
+    // border: 1px solid gray;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    p {
+      @include hero-font(17px);
+      font-weight: bold;
+      align-self: center;
+    }
+    #bryce {
+      width: 225px;
+      height: 150px;
+      justify-content: flex-start;
+    }
+    #report {
+      padding: 65px 5px;
+      border: 1px solid lightgray;
+    }
+  }
   .my-teams {
     display: flex;
     flex-direction: row;
@@ -100,7 +126,7 @@
       padding-top: 10px;
       background-color: $teal-green;
       width: 150px;
-      height: 25px;
+      height: 35px;
       text-align: center;
     }
     p {
@@ -120,7 +146,7 @@
     .headlines-color {
       background-color: $teal-green;
       width: 150px;
-      height: 35px; 
+      height: 35px;
     }
     .headlines {
       @include content-head;
@@ -133,9 +159,77 @@
     }
     p {
       padding-top: 5px;
+      padding-bottom: 5px;
       margin: 10px 0px;
       font-weight: bold;
+      border-bottom: 1px solid gray;
     }
+    p:hover {
+      text-decoration: underline;
+    }
+    .trending-colors {
+      width: 150px;
+    }
+
   }
 
+}
+
+@media screen and (max-width: 968px) {
+  * {
+    margin: 0;
+  }
+  .hero-container {
+    width: 100%;
+    .hero-image {
+      width: 100vw;
+    }
+    img {
+      width: 100vw;
+    }
+    .under-article {
+      width: 95vw;
+      margin: auto;
+      h3 {
+        font-size: 15px;
+      }
+    }
+  }
+  .hide-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  * {
+    margin: 0;
+  }
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .under-article h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .my-teams {
+    align-self: center;
+  }
+  .hide-author {
+    display: none;
+  }
+  .hero-container img {
+    width: 100vw;
+  }
+  h3{
+    font-size: 15px;
+  }
 }
